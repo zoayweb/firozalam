@@ -1,73 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
     <title> Firoze Alam </title>
 </head>
+
 <body>
     <!--start header-->
-            <header class="clearfix">
-               
-              <a href="#" class="responsive">menu</a>
-              <nav>
-                  <ul>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="#">MY WORK</a></li>
-                  <li><a href="#">MY TRAINING</a></li>
-                  <li><a href="blog.html">MY BLOG</a></li>
-                  <li><a href="#">CONTACT</a></li>
+    <header class="clearfix">
+        <!-- <a href="#" class="responsive">menu</a>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">MY WORK</a></li>
+            <li><a href="#">MY TRAINING</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav> -->
+        <nav class="navbar navbar-light navbar-expand-lg navbar-template" id="nav-font">
+            <a class="navbar-brand" href="#"></a>
+            <div class="d-flex flex-row order-2 order-sm-2 order-lg-3">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/in/firoze-alam/"
+                            target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-2" href="https://medium.com/@firoze" target="_blank"><i
+                                class="fab fa-medium fa-2x"></i></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
                 </ul>
-              </nav>
-            </header>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-3 order-sm-3 order-lg-2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 
-            <div class="container-fluid overflow-hidden">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-12 mt-5">
-                        <img class="img" src="img/firozalam.png" alt="">
-                    </div>
-                            
-        
-              
-                    <div class="container col-lg-7 col-md-7 col-sm-12 content-column">
-                        <section id="about" class="about mx-4">
-                                <div class="about-container">
-                                    <h2 class="about-h2">Hi! I am</h2>
-                                    <p class="name">Firoze Alam</p>
-                                    <p class="description">I am passionate about communicating complicated things in simple ways! I have an undaunted curiosity; I don’t shy away from asking critical and courageous questions. I prefer the discomfort and challenge of not knowing over seeking the comfort of an easy answer.
-                                    <br> <br>        
-                                </p>
-                                </div>
-                        </section>        
-                    
-                        <section id="passion" class="passion mx-4">
-                            <div>
-                                <h2 class="passion-h2">Areas of work & interest</h2>
-                                <ul>
-                                    <li>Educational Technology (Ed Tech)</li>
-                                    <li>Data Science</li>
-                                    <li>Social Psychology</li>
-                                    <li>Diversity and Inclusion</li>
-                                </ul>
-                            </div>     
-                            <br> <br> <br>       
-                        </section> 
-                    </div>
-                            </div>
-                            
-                </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid overflow-hidden">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12 mt-5">
+                <img class="img" src="img/firozalam.png" alt="">
             </div>
 
+            <div class="container col-lg-7 col-md-7 col-sm-12 content-column">
+                <section id="about" class="about mx-4">
+                    <div class="about-container">
+                        <h2 class="about-h2">Hi! I am</h2>
+                        <p class="name">Firoze Alam</p>
+                        <p class="description">I am passionate about communicating complicated things in simple ways! I
+                            prefer the discomfort and challenge of not knowing over seeking the comfort of an easy
+                            answer
+                            <br> <br>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="passion" class="passion mx-4">
+                    <div>
+                        <h2 class="passion-h2">Areas of work & interest</h2>
+                        <ul>
+                            <li>Educational Technology (Ed Tech)</li>
+                            <li>Data Science</li>
+                            <li>Social Psychology</li>
+                            <li>Diversity and Inclusion</li>
+                        </ul>
+                    </div>
+                    <br> <br> <br>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script>
-        $('a.responsive').click( function() {
-          $('nav').slideToggle(300);
-    	});
-    </script>
+    <!-- <script>
+        $('a.responsive').click(function () {
+            $('nav').slideToggle(300);
+        });
+    </script> -->
 </body>
+
 </html>
