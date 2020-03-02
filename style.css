@@ -4,12 +4,14 @@
 body {
   font-family: Montserrat;
 }
-header{
-    padding-left: 40px;
-} 
+
+.navbar {
+  position: unset;
+}
+
 /*hide all responsive-only elements*/
 .responsive {
-    display: none;
+  display: none;
 }
 
 nav {
@@ -27,40 +29,39 @@ nav ul {
   padding: 0;
   list-style: none;
 }
+
 nav ul li {
-  float: left;
-  margin-right: 20px;
+  padding-right: 12px;
 }
 
-nav ul li a {
+#nav-font ul li a {
   color: #000;
   display: inline-block;
-  padding: 15px 15px;
+  padding: 15px 10px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
 
 }
 
-nav ul li a:hover {
+#nav-font ul li a:hover {
   color: turquoise;
-  text-decoration: none;
 }
 
 .bar {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-  }
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
 
 
 @media only screen and (max-width : 720px) {
   .responsive {
-      display: none;
-}
-  
-  
+    display: none;
+  }
+
+
   a.responsive {
     display: inline-block;
     float: right;
@@ -83,38 +84,48 @@ nav ul li a:hover {
     float: none;
     border-bottom: 1px solid #fff;
   }
-  
-  nav ul li a { 
-    display: block; 
-    padding-left: 3%; 
-    
+
+  nav ul li a {
+    display: block;
+    padding-left: 3%;
+
   }
 }
 
 
-@media only screen and (max-width: 769px){
-    .img-column{
-        background-image: url(img/firozealam_2.png);
-        margin-left: 40px;
-        text-align: center;
-    }
+@media only screen and (max-width: 769px) {
+  .img-column {
+    background-image: url(img/firozealam_2.png);
+    margin-left: 40px;
+    text-align: center;
+  }
 }
 
-@media only screen and (min-width: 769px){
-    img{
-        width: 35%;
-        margin-left: 20px;
-        position: fixed;
-        top: 70px;
-    }
+@media only screen and (min-width: 767px) {
+  img {
+    width: 35%;
+    margin-left: 20px;
+    position: fixed;
+    /* top: 30px; */
+  }
 }
 
-@media only screen and (min-width: 1539px){
-  img{
-      width: 35%;
-      margin-left: 30px;
-      position: fixed;
-      top: 230px;
+@media only screen and (min-width: 1260px) {
+  img {
+    width: 35%;
+    margin-left: 20px;
+    position: fixed;
+    top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1539px) {
+  img {
+    width: 35%;
+    margin-left: 30px;
+    position: fixed;
+    top: 120px;
+    /* from 230px */
   }
 }
 
@@ -122,9 +133,9 @@ nav ul li a:hover {
 .passion-h2,
 .portfolio-h2,
 .contact-h2 {
-	position: relative;
-    margin: 8rem 0 10px 0;
-    font-weight: 600;
+  position: relative;
+  margin: 8rem 0 10px 0;
+  font-weight: 600;
 
 }
 
@@ -132,98 +143,102 @@ nav ul li a:hover {
 .passion-h2:before,
 .portfolio-h2:before,
 .contact-h2:before {
-    font-family: serif;
-    font-weight: 900;
-    font-size: 8rem;
-	color: rgb(215, 247, 255);
-	position: absolute;
-    left: 0px;
-	z-index: -1;
-	content: "";
-	position: absolute;
-	top: -80px;
-	width: 100%;
+  font-family: serif;
+  font-weight: 900;
+  font-size: 8rem;
+  color: rgb(215, 247, 255);
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: -80px;
+  width: 100%;
 }
 
 .about-h2:before {
-	content: "about";
+  content: "about";
 }
 
 .passion-h2:before {
-	content: "passion";
+  content: "passion";
 }
 
 .portfolio-h2:before {
-	content: "portfolio";
+  content: "portfolio";
 }
 
 .contact-h2:before {
-	content: "let's talk";
+  content: "let's talk";
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:450px) {
 
-    img{
-        margin: 0;
-        width: 100%;
-    }
+  img {
+    margin: 0;
+    width: 100%;
+  }
 
-    .about-h2,
-.passion-h2,
-.portfolio-h2,
-.contact-h2 {
+  .about-h2,
+  .passion-h2,
+  .portfolio-h2,
+  .contact-h2 {
     font-size: 22px;
     margin-top: 70px;
     color: #333;
     font-style: initial;
 
-}
-    .about-h2:before,
-.passion-h2:before,
-.portfolio-h2:before,
-.contact-h2:before {
+  }
+
+  .about-h2:before,
+  .passion-h2:before,
+  .portfolio-h2:before,
+  .contact-h2:before {
     font-style: normal;
     font-family: serif;
     font-weight: 900;
     font-size: 4.5rem;
-	color: rgba(194, 243, 255, 0.884);
-	position: absolute;
+    color: rgba(194, 243, 255, 0.884);
+    position: absolute;
     left: 0px;
-	z-index: -1;
-	content: "";
-	position: absolute;
-	top: -48px;
-	width: 100%;
-}
-.about-h2:before {
-	content: "about";
-}
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -48px;
+    width: 100%;
+  }
 
-.passion-h2:before {
-	content: "passion";
-}
+  .about-h2:before {
+    content: "about";
+  }
 
-.portfolio-h2:before {
-	content: "portfolio";
-}
+  .passion-h2:before {
+    content: "passion";
+  }
 
-.contact-h2:before {
-	content: "let's talk";
-}
+  .portfolio-h2:before {
+    content: "portfolio";
+  }
+
+  .contact-h2:before {
+    content: "let's talk";
+  }
 
 }
 
 .name {
-    font-size: 3rem;
-    margin-top: 26px;
-    margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
-.description{
-    line-height: 1.6;
-    font-size: 22px;
-    text-align: justify;
-    padding-top: 15px;
+.description {
+  line-height: 1.6;
+  font-size: 20px;
+  text-align: justify;
+  padding-top: 15px;
 }
 
 @media (max-width:600px) {
@@ -233,10 +248,11 @@ nav ul li a:hover {
 }
 
 /* AREAS OF INTEREST */
-.passion ul{
-    padding-top: 50px;
+.passion ul {
+  padding-top: 50px;
 }
-.passion ul li{
+
+.passion ul li {
   font-size: 22px;
   padding-top: 10px;
 }
