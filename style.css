@@ -119,7 +119,7 @@ nav ul li {
   }
 }
 
-@media only screen and (min-width: 1539px) {
+/* @media only screen and (min-width: 1539px) {
   img {
     width: 35%;
     margin-left: 30px;
@@ -128,7 +128,7 @@ nav ul li {
     /* from 230px
         newly from 120px */
   }
-}
+} */
 
 .about-h2,
 .passion-h2,
