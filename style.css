@@ -103,10 +103,10 @@ nav ul li {
 
 @media only screen and (min-width: 767px) {
   img {
-    width: 35%;
+    width: 40%;
     margin-left: 20px;
     position: fixed;
-    /* top: 30px; */
+    top: 0px;
   }
 }
 
